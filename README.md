@@ -11,15 +11,15 @@ Dans ce projet, nous allons créer une représentation numérique de la salle de
 
 ## Captures d'écran:
 
-![Vue de l'intérieur4](MainRoom/Capture_Salle5.png)
+![Vue de l'intérieur4](MainRoom/Captures/Capture1.png)
 
-![Vue de l'intérieur1](MainRoom/Capture_Salle1.png)
+![Vue de l'intérieur1](MainRoom/Captures/Capture2.png)
 
-![Vue de l'intérieur2](MainRoom/Capture_Salle2.png)
+![Vue de l'intérieur2](MainRoom/Captures/Capture3.png)
 
-![Vue de l'intérieur3](MainRoom/Capture_Salle3.png)
+![Vue de l'intérieur3](MainRoom/Captures/Capture4.png)
 
-![Vue de l'extérieure](MainRoom/Capture_Salle4.png)
+![Vue de l'extérieure](MainRoom/Captures/Capture5.png)
 
 ## Contrôles de Déplacement :
 

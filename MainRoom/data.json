@@ -11,6 +11,9 @@
         ],
         "speed": 5
     },
+    "shaders": [
+        ["LightShaderTexFrag.glsl", "LightShaderTexVert.glsl"]
+    ],
     "textures": [
         "assets/blanc.png",
         "assets/noir.png",

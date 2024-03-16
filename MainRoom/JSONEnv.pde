@@ -26,6 +26,10 @@ public class JSONEnv implements Environment {
     this.loaderMap.put("camera", new Loader() { public void load() { loadCamera(); }});
     this.loaderMap.put("textures", new Loader() { public void load() { loadTextures(); }});
     this.loaderMap.put("forms", new Loader() { public void load() { loadShapes(); }});
+    this.loaderMap.put("lights", new Loader() { public void load() { loadLights(); }});
+    this.loaderMap.put("shaders", new Loader() { public void load() { loadShaders(); }});
+
+
   }
   
   @Override
@@ -64,7 +68,19 @@ public class JSONEnv implements Environment {
       loader.load();  
     }
   }
-  
+    private void loadLights() {
+    JSONArray data = this.root.getJSONArray("lights");
+    int size = data.size();
+    lightPos = new PVector[size];
+    lightColor = new PVector[size];
+    for (int i = 0; i < size; i++) {
+      JSONObject light = data.getJSONObject(i); 
+      JSONArray pos = light.getJSONArray("position");
+      JSONArray col = light.getJSONArray("color");
+      lightPos[i] = new PVector(pos.getInt(0), pos.getInt(1), pos.getInt(2));
+      lightColor[i] = new PVector(col.getInt(0), col.getInt(1), col.getInt(2));
+    }
+  }
   public void load(String key) {
     this.loaderMap.get(key).load();    
   }
@@ -134,3 +150,12 @@ public class JSONEnv implements Environment {
     shapes = shapeParser.parseObjects(drawable);
   }
 }
+  private void loadShaders() {
+    JSONArray data = this.root.getJSONArray("shaders");
+    int size = data.size();
+    shaders = new PShader[size];
+    for (int i = 0; i < size; i++) {
+      JSONArray arr = data.getJSONArray(i);
+      shaders[i] = loadShader(arr.getString(0), arr.getString(1));
+    }
+  }
