@@ -1,0 +1,1078 @@
+{
+    "camera": {
+        "position": [
+            650,
+            -180,
+            1100
+        ],
+        "angle": [
+            200,
+            15
+        ],
+        "speed": 5
+    },
+    "textures": [
+        "assets/blanc.png",
+        "assets/noir.png",
+        "assets/beige.png",
+        "assets/rouge.png",
+        "assets/vert.png",
+        "assets/orange.png",
+        "assets/bleu.png",
+        "assets/gris.png",
+        "assets/jaune.png"
+    ],
+    "forms": {
+        "types": {
+            "porte": {
+                "type": "box",
+                "dimensions": [
+                    5,
+                    200,
+                    90
+                ],
+                "texture": 7
+            },
+            "pied_chaise_arriere": {
+                "type": "box",
+                "dimensions": [
+                    2,
+                    50,
+                    2
+                ],
+                "texture": 8
+            },
+            "pied_chaise_devant": {
+                "type": "box",
+                "dimensions": [
+                    2,
+                    40,
+                    2
+                ],
+                "texture": 8
+            },
+            "chaise": {
+                "type": "composite",
+                "components": {
+                    "pied_1": {
+                        "type": "pied_chaise_arriere",
+                        "position": [
+                            0,
+                            -10,
+                            0
+                        ]
+                    },
+                    "pied_2": {
+                        "type": "pied_chaise_arriere",
+                        "position": [
+                            43,
+                            -10,
+                            0
+                        ]
+                    },
+                    "pied_3": {
+                        "type": "pied_chaise_devant",
+                        "position": [
+                            0,
+                            0,
+                            42
+                        ]
+                    },
+                    "pied_4": {
+                        "type": "pied_chaise_devant",
+                        "position": [
+                            43,
+                            0,
+                            42
+                        ]
+                    },
+                    "chaise": {
+                        "type": "box",
+                        "position": [
+                            0,
+                            -49,
+                            0.85
+                        ],
+                        "dimensions": [
+                            45,
+                            40,
+                            2
+                        ],
+                        "rotation": [
+                            5,
+                            0,
+                            0
+                        ],
+                        "texture": 5
+                    },
+                    "assise": {
+                        "type": "box",
+                        "position": [
+                            0,
+                            -2,
+                            0
+                        ],
+                        "dimensions": [
+                            45,
+                            2,
+                            45
+                        ],
+                        "texture": 5
+                    }
+                }
+            },
+            "pied_table": {
+                "type": "box",
+                "dimensions": [
+                    4,
+                    70,
+                    4
+                ],
+                "texture": 1
+            },
+            "table": {
+                "type": "composite",
+                "components": {
+                    "pied_1": {
+                        "type": "pied_table",
+                        "position": [
+                            2,
+                            20,
+                            2
+                        ]
+                    },
+                    "pied_2": {
+                        "type": "pied_table",
+                        "position": [
+                            194,
+                            20,
+                            2
+                        ]
+                    },
+                    "pied_3": {
+                        "type": "pied_table",
+                        "position": [
+                            194,
+                            20,
+                            94
+                        ]
+                    },
+                    "pied_4": {
+                        "type": "pied_table",
+                        "position": [
+                            2,
+                            20,
+                            94
+                        ]
+                    },
+                    "plateau": {
+                        "type": "box",
+                        "dimensions": [
+                            200,
+                            5,
+                            100
+                        ],
+                        "position": [
+                            0,
+                            15,
+                            0
+                        ],
+                        "texture": 6
+                    }
+                }
+            },
+            "uc": {
+                "type": "box",
+                "dimensions": [
+                    15,
+                    30,
+                    35
+                ],
+                "texture": 1
+            },
+            "clavier": {
+                "type": "box",
+                "rotation": [
+                    -2,
+                    0,
+                    0
+                ],
+                "dimensions": [
+                    50,
+                    2,
+                    15
+                ],
+                "texture": 1
+            },
+            "souris": {
+                "type": "box",
+                "dimensions": [
+                    8,
+                    4,
+                    12
+                ],
+                "texture": 1
+            },
+            "ecran": {
+                "type": "composite",
+                "components": {
+                    "pied": {
+                        "type": "box",
+                        "position": [
+                            10,
+                            14,
+                            0
+                        ],
+                        "dimensions": [
+                            5,
+                            30,
+                            3
+                        ],
+                        "texture": 7
+                    },
+                    "lien": {
+                        "type": "box",
+                        "position": [
+                            11,
+                            20,
+                            3
+                        ],
+                        "dimensions": [
+                            3,
+                            3,
+                            2
+                        ],
+                        "texture": 1
+                    },
+                    "support_pc": {
+                        "type": "box",
+                        "position": [
+                            0,
+                            44,
+                            -5
+                        ],
+                        "dimensions": [
+                            25,
+                            1,
+                            20
+                        ],
+                        "texture": 7
+                    },
+                    "ecran_pc": {
+                        "type": "box",
+                        "position": [
+                            -15,
+                            0,
+                            5
+                        ],
+                        "dimensions": [
+                            55,
+                            35,
+                            2
+                        ],
+                        "texture": 1
+                    }
+                }
+            },
+            "poste_1": {
+                "type": "composite",
+                "components": {
+                    "uc": {
+                        "type": "uc",
+                        "position": [
+                            80,
+                            -30,
+                            0
+                        ],
+                        "rotation": [
+                            0,
+                            -5,
+                            0
+                        ]
+                    },
+                    "ecran": {
+                        "type": "ecran",
+                        "position": [
+                            35,
+                            -45,
+                            5
+                        ]
+                    },
+                    "clavier": {
+                        "type": "clavier",
+                        "position": [
+                            25,
+                            -3,
+                            35
+                        ],
+                        "rotation": [
+                            -2,
+                            0,
+                            0
+                        ]
+                    },
+                    "souris": {
+                        "type": "souris",
+                        "position": [
+                            75,
+                            -4,
+                            45
+                        ]
+                    }
+                }
+            },
+            "poste_2": {
+                "type": "composite",
+                "components": {
+                    "uc": {
+                        "type": "uc",
+                        "position": [
+                            5,
+                            -30,
+                            0
+                        ],
+                        "rotation": [
+                            0,
+                            2,
+                            0
+                        ]
+                    },
+                    "ecran": {
+                        "type": "ecran",
+                        "position": [
+                            45,
+                            -45,
+                            5
+                        ]
+                    },
+                    "clavier": {
+                        "type": "clavier",
+                        "position": [
+                            35,
+                            -3,
+                            35
+                        ],
+                        "rotation": [
+                            -2,
+                            0,
+                            0
+                        ]
+                    },
+                    "souris": {
+                        "type": "souris",
+                        "position": [
+                            90,
+                            -4,
+                            40
+                        ]
+                    }
+                }
+            },
+            "bureau_1": {
+                "type": "composite",
+                "position": [
+                    0,
+                    0,
+                    0
+                ],
+                "components": {
+                    "table_1": {
+                        "type": "table",
+                        "position": [
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "poste_2": {
+                        "type": "poste_2",
+                        "position": [
+                            100,
+                            15,
+                            10
+                        ],
+                        "rotation": [
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "chaise_1": {
+                        "type": "chaise",
+                        "position": [
+                            75,
+                            50,
+                            120
+                        ],
+                        "rotation": [
+                            0,
+                            178,
+                            0
+                        ]
+                    },
+                    "chaise_2": {
+                        "type": "chaise",
+                        "position": [
+                            170,
+                            50,
+                            115
+                        ],
+                        "rotation": [
+                            0,
+                            183,
+                            0
+                        ]
+                    }
+                }
+            },
+            "bureau_2": {
+                "type": "composite",
+                "position": [
+                    0,
+                    0,
+                    0
+                ],
+                "components": {
+                    "table_1": {
+                        "type": "table",
+                        "position": [
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "poste_1": {
+                        "type": "poste_1",
+                        "position": [
+                            0,
+                            15,
+                            15
+                        ],
+                        "rotation": [
+                            0,
+                            5,
+                            0
+                        ]
+                    },
+                    "poste_2": {
+                        "type": "poste_2",
+                        "position": [
+                            100,
+                            15,
+                            10
+                        ],
+                        "rotation": [
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "chaise_1": {
+                        "type": "chaise",
+                        "position": [
+                            75,
+                            50,
+                            120
+                        ],
+                        "rotation": [
+                            0,
+                            178,
+                            0
+                        ]
+                    },
+                    "chaise_2": {
+                        "type": "chaise",
+                        "position": [
+                            170,
+                            50,
+                            115
+                        ],
+                        "rotation": [
+                            0,
+                            183,
+                            0
+                        ]
+                    }
+                }
+            },
+            "range": {
+                "type": "composite",
+                "position": [
+                    0,
+                    0,
+                    0
+                ],
+                "components": {
+                    "table_1": {
+                        "type": "bureau_1",
+                        "position": [
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "table_2": {
+                        "type": "bureau_2",
+                        "position": [
+                            201,
+                            0,
+                            0
+                        ]
+                    },
+                    "table_3": {
+                        "type": "bureau_2",
+                        "position": [
+                            402,
+                            0,
+                            0
+                        ]
+                    }
+                }
+            },
+            "fenetre": {
+                "type": "composite",
+                "position": [
+                    0,
+                    0,
+                    0
+                ],
+                "components": {
+                    "clenche": {
+                        "type": "box",
+                        "position": [
+                            5,
+                            80,
+                            5
+                        ],
+                        "dimensions": [
+                            3,
+                            12,
+                            3
+                        ],
+                        "texture": 1
+                    },
+                    "p1": {
+                        "type": "box",
+                        "position": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "dimensions": [
+                            5,
+                            10,
+                            380
+                        ],
+                        "texture": 7
+                    },
+                    "p2": {
+                        "type": "box",
+                        "position": [
+                            0,
+                            135,
+                            0
+                        ],
+                        "dimensions": [
+                            5,
+                            10,
+                            380
+                        ],
+                        "texture": 7
+                    },
+                    "p3": {
+                        "type": "box",
+                        "position": [
+                            0,
+                            10,
+                            0
+                        ],
+                        "dimensions": [
+                            5,
+                            125,
+                            10
+                        ],
+                        "texture": 7
+                    },
+                    "p4": {
+                        "type": "box",
+                        "position": [
+                            0,
+                            10,
+                            370
+                        ],
+                        "dimensions": [
+                            5,
+                            125,
+                            10
+                        ],
+                        "texture": 7
+                    },
+                    "p5": {
+                        "type": "box",
+                        "position": [
+                            0,
+                            10,
+                            300
+                        ],
+                        "dimensions": [
+                            5,
+                            40,
+                            10
+                        ],
+                        "texture": 7
+                    },
+                    "p6": {
+                        "type": "box",
+                        "position": [
+                            0,
+                            40,
+                            200
+                        ],
+                        "dimensions": [
+                            5,
+                            100,
+                            10
+                        ],
+                        "texture": 7
+                    },
+                    "p7": {
+                        "type": "box",
+                        "position": [
+                            0,
+                            40,
+                            0
+                        ],
+                        "dimensions": [
+                            5,
+                            10,
+                            380
+                        ],
+                        "texture": 7
+                    }
+                }
+            }
+        },
+        "drawable": {
+            "salle": {
+                "type": "composite",
+                "position": [
+                    0,
+                    0,
+                    0
+                ],
+                "dimensions": [
+                    590,
+                    280,
+                    980
+                ],
+                "components": {
+                    "sol": {
+                        "type": "box",
+                        "position": [
+                            0,
+                            -1,
+                            0
+                        ],
+                        "dimensions": [
+                            750,
+                            1,
+                            1200
+                        ],
+                        "texture": 3
+                    },
+                    "plafond": {
+                        "type": "box",
+                        "position": [
+                            0,
+                            -300,
+                            0
+                        ],
+                        "dimensions": [
+                            750,
+                            1,
+                            1200
+                        ],
+                        "texture": 0
+                    },
+                    "mur_tableau": {
+                        "type": "box",
+                        "position": [
+                            0,
+                            -300,
+                            0
+                        ],
+                        "dimensions": [
+                            750,
+                            300,
+                            1
+                        ],
+                        "texture": 2
+                    },
+                    "mur_couloir": {
+                        "type": "box",
+                        "position": [
+                            750,
+                            -300,
+                            0
+                        ],
+                        "dimensions": [
+                            1,
+                            300,
+                            1200
+                        ],
+                        "texture": 2
+                    },
+                    "mur_fond": {
+                        "type": "box",
+                        "position": [
+                            0,
+                            -300,
+                            1200
+                        ],
+                        "dimensions": [
+                            750,
+                            300,
+                            1
+                        ],
+                        "texture": 2
+                    },
+                    "mur_fenetres": {
+                        "type": "composite",
+                        "position": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "components": {
+                            "fst_radiateur": {
+                                "type": "box",
+                                "position": [
+                                    0,
+                                    -60,
+                                    100
+                                ],
+                                "dimensions": [
+                                    10,
+                                    50,
+                                    600
+                                ],
+                                "texture": 0
+                            },
+                            "snd_radiateur": {
+                                "type": "box",
+                                "position": [
+                                    0,
+                                    -60,
+                                    900
+                                ],
+                                "dimensions": [
+                                    10,
+                                    50,
+                                    200
+                                ],
+                                "texture": 0
+                            },
+                            "mur_bas": {
+                                "type": "box",
+                                "position": [
+                                    0,
+                                    -80,
+                                    0
+                                ],
+                                "dimensions": [
+                                    1,
+                                    79,
+                                    1200
+                                ],
+                                "texture": 2
+                            },
+                            "mur_haut": {
+                                "type": "box",
+                                "position": [
+                                    0,
+                                    -300,
+                                    0
+                                ],
+                                "dimensions": [
+                                    1,
+                                    65,
+                                    1200
+                                ],
+                                "texture": 2
+                            },
+                            "mur_separateur": {
+                                "type": "box",
+                                "position": [
+                                    0,
+                                    -300,
+                                    760
+                                ],
+                                "dimensions": [
+                                    20,
+                                    300,
+                                    60
+                                ],
+                                "texture": 2
+                            },
+                            "bordure_fenetres": {
+                                "type": "box",
+                                "position": [
+                                    0,
+                                    -90,
+                                    0
+                                ],
+                                "dimensions": [
+                                    10,
+                                    10,
+                                    1200
+                                ],
+                                "texture": 7
+                            },
+                            "fenetre1": {
+                                "type": "fenetre",
+                                "position": [
+                                    -5,
+                                    -235,
+                                    0
+                                ]
+                            },
+                            "fenetre2": {
+                                "type": "fenetre",
+                                "position": [
+                                    -5,
+                                    -235,
+                                    380
+                                ]
+                            },
+                            "fenetre3": {
+                                "type": "fenetre",
+                                "position": [
+                                    -5,
+                                    -235,
+                                    820
+                                ]
+                            }
+                        }
+                    },
+                    "porte_entree": {
+                        "type": "porte",
+                        "position": [
+                            745,
+                            -200,
+                            50
+                        ]
+                    },
+                    "porte_salle": {
+                        "type": "porte",
+                        "position": [
+                            -5,
+                            -200,
+                            50
+                        ],
+                        "rotation": [
+                            0,
+                            90,
+                            0
+                        ]
+                    },
+                    "porte_salle2": {
+                        "type": "porte",
+                        "position": [
+                            -1200,
+                            -200,
+                            50
+                        ],
+                        "rotation": [
+                            0,
+                            90,
+                            0
+                        ]
+                    },
+                    "tele": {
+                        "type": "composite",
+                        "rotation": [
+                            0,
+                            30,
+                            0
+                        ],
+                        "components": {
+                            "pied": {
+                                "type": "box",
+                                "position": [
+                                    10,
+                                    -200,
+                                    200
+                                ],
+                                "dimensions": [
+                                    100,
+                                    80,
+                                    3
+                                ],
+                                "texture": 1
+                            },
+                            "lien": {
+                                "type": "box",
+                                "position": [
+                                    60,
+                                    -150,
+                                    200
+                                ],
+                                "dimensions": [
+                                    5,
+                                    170,
+                                    2
+                                ],
+                                "texture": 1
+                            },
+                            "support": {
+                                "type": "box",
+                                "position": [
+                                    40,
+                                    -10,
+                                    200
+                                ],
+                                "dimensions": [
+                                    50,
+                                    1,
+                                    20
+                                ],
+                                "texture": 1
+                            }
+                        }
+                    },
+                    "tableau": {
+                        "type": "composite",
+                        "position": [
+                            200,
+                            -200,
+                            1
+                        ],
+                        "components": {
+                            "ardoise": {
+                                "type": "box",
+                                "position": [
+                                    0,
+                                    0,
+                                    0
+                                ],
+                                "dimensions": [
+                                    480,
+                                    120,
+                                    2
+                                ],
+                                "texture": 4
+                            },
+                            "ramasse_craies": {
+                                "type": "box",
+                                "position": [
+                                    0,
+                                    120,
+                                    0
+                                ],
+                                "dimensions": [
+                                    480,
+                                    1,
+                                    10
+                                ],
+                                "texture": 7
+                            }
+                        }
+                    },
+                    "oray": {
+                        "type": "box",
+                        "position": [
+                            220,
+                            -210,
+                            5
+                        ],
+                        "dimensions": [
+                            170,
+                            10,
+                            10
+                        ],
+                        "texture": 0
+                    },
+                    "bureau_prof": {
+                        "type": "table",
+                        "position": [
+                            280,
+                            -90,
+                            170
+                        ],
+                        "rotation": [
+                            0,
+                            2,
+                            0
+                        ]
+                    },
+                    "chaise_prof": {
+                        "type": "chaise",
+                        "position": [
+                            360,
+                            -40,
+                            145
+                        ],
+                        "rotation": [
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "range_number_1": {
+                        "type": "range",
+                        "position": [
+                            140,
+                            -91,
+                            270
+                        ]
+                    },
+                    "range_number_2": {
+                        "type": "range",
+                        "position": [
+                            140,
+                            -91,
+                            470
+                        ]
+                    },
+                    "range_number_3": {
+                        "type": "range",
+                        "position": [
+                            140,
+                            -91,
+                            670
+                        ]
+                    },
+                    "range_number_4": {
+                        "type": "range",
+                        "position": [
+                            140,
+                            -91,
+                            870
+                        ],
+                        "rotation": [
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "fst_table_fond": {
+                        "type": "table",
+                        "position": [
+                            550,
+                            -91,
+                            1100
+                        ]
+                    },
+                    "scd_table_fond": {
+                        "type": "table",
+                        "position": [
+                            345,
+                            -91,
+                            1100
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}
